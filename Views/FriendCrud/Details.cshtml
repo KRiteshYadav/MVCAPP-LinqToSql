@@ -1,0 +1,42 @@
+﻿@model MVCApp_Linq.Table
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Table</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FreindId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FreindId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FriendName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FriendName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Place)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Place)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.FreindId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
